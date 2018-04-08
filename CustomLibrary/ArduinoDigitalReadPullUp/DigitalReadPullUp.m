@@ -92,12 +92,12 @@ classdef DigitalReadPullUp < realtime.internal.SourceSampleTime ...
         end
         
         function varargout = getOutputDataTypeImpl(~)
-            varargout{1} = 'double';
+            varargout{1} = 'int8';
         end
         
         function icon = getIconImpl(~)
             % Define a string as the icon for the System block in Simulink.
-            icon = 'Digital Read PullUp';
+            icon = 'Digital Read Pull Up';
         end    
     end
     
@@ -113,7 +113,7 @@ classdef DigitalReadPullUp < realtime.internal.SourceSampleTime ...
     
     methods (Static)
         function name = getDescriptiveName()
-            name = 'Digital Read PullUp';
+            name = 'Digital Read Pull Up';
         end
         
         function b = isSupportedContext(context)
