@@ -42,7 +42,7 @@ classdef DigitalReadPullUp < realtime.internal.SourceSampleTime ...
         end
         
         function y = stepImpl(obj)   %#ok<MANU>
-            y = double(0);
+            y = int8(0);
             if isempty(coder.target)
                 % Place simulation output code here
             else
